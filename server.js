@@ -31,7 +31,7 @@ io.on("connection",socket =>{
   // join event
 socket.on('join',async ({userId})=>{
  const users = await addUser(userId,socket.id)
- console.log(users);
+//  console.log(users);
  setInterval(()=>{
 socket.emit("connectedUsers", {
   users: users.filter((user) => user.userId !== userId),
@@ -117,7 +117,7 @@ if (receiversocket) {
 // disconnect event
 socket.on("disconnect",()=>{
   removeUser(socket._id)
-  console.log("User disconnected")
+  // console.log("User disconnected")
 })
 
 })

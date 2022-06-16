@@ -122,7 +122,7 @@ const [notificationPopup, setNotificationPopup] = useState(false)
             endMessage={<EndMessage />}
             dataLength={posts.length}
           >
-            {posts.map((post) => (
+            {posts?.map((post) => (
               <CardPost
                 socket={socket}
                 key={post._id}
