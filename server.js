@@ -140,3 +140,8 @@ app.use("/api/reset",require("./api/reset"))
       console.log(`Express server running on ${PORT}`);
     });
 });
+
+// MONGO_URI = mongodb://localhost:27017/SocialMedia
+// jwtSecret = sachin
+// SENDGRID_KEY=your sendgridkey
+// EMAIL_FROM=your email which is use in sendgrid
